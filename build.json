@@ -1,13 +1,12 @@
 {
-    "git_url": "https://github.com/l-d-j/wildfly-test.git",
+    "git_url": "https://github.com/TomasTomecek/wildfly-test.git",
     "image": "my-test-image",
     "prepublish_plugins": [{
-        "name": "run_test_for_container",
+        "name": "test_built_image",
         "args": {
-          "image_id": "BUILT_IMAGE_ID",
-          "image_dir": "BUILD_DOCKERFILE_PATH",
-          "git_repo_path": "BUILD_GIT_PATH",
-          "test_class_name": "EapTest"
-      }}]
+            "image_id": "BUILT_IMAGE_ID",
+            "git_uri": "BUILD_GIT_PATH",
+            "tests_git_path": "./mw_docker_smoke_tests.py"
+        }
+    }]
 }
-
