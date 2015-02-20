@@ -1,0 +1,5 @@
+{
+    "port": 8080,
+    "timeout": 10,
+    "ok_log_entry": "JBAS015961"
+}
